@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+            padding: 20px;
+           
+        }
+        button{
+            width: 80px;
+            background-color: green;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            border-radius: 10px;
+            margin: 10px 20px 30px 400px;
+            
+        }
+        fieldset{
+            display: flex;
+            flex-direction: column;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form class="bordered">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label>Name</label>
+            <input type="text" name="name">
+            <label>Username</label>
+            <input type="text" name="Username">
+            <label>Email</label>
+            <input type="email" name="Email">
+            <label>Password</label>
+            <input type="Password" name="Password">
+            <label>Confirm Password</label>
+            <input type="Confirm password" name="Confirm password">
+            <label>Gender</label>
+            <label><input type="radio" name="Gender" value="Male" >Male</label>
+            <label><input type="radio" name="Gender" value="Female" >Female</label>
+            <label><input type="radio" name="Gender" value="Other" >Other</label>
+        </fieldset>
+        <fieldset>
+            <legend>Account Information</legend>
+            <label>Account type</label>
+            <label><input type="radio" name="Account type" value="Personal">Personal</label>
+            <label><input type="radio" name="Account type" value="Business">Business</label>
+            <label>Country</label>
+            <select>
+                <option>Select a Country..</option>
+                <option>Kenya</option>
+                <option>Uganda</option>
+                <option>Tanzania</option>
+                <option>Ethiopia</option>
+            </select>
+            <label>State/Province</label>
+            <select>
+                <option>Select a Province</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Interests</legend>
+            <label>Select your Interests:</label>
+            <label><input type="checkbox" value="Reading">Reading</label>
+            <label><input type="checkbox" value="Sports">Sports</label>
+            <label><input type="checkbox" value="Music">Music</label>
+            <label><input type="checkbox" value="Travel">Travel</label>
+            <label><input type="checkbox" value="Cooking">Cooking</label>
+        </fieldset>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

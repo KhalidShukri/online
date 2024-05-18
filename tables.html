@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Tables</title>
+    <STYLE>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-right: 20px;
+        }
+        h1{
+            text-align: center;
+            color: #333;
+        }
+        table{
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        caption{
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        th, td{
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid#131313;
+    
+        }
+        th{
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even):hover{
+            background-color: aqua;
+        }
+    </STYLE>
+</head>
+<body>
+    <h1>Student Grade Table</h1>
+
+    <table>
+        <caption>Grade summary for Semester One</caption>
+        <thead>
+            <tr>
+                <th>StudentName</th>
+                <th>Course</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Khalid</td>
+                <td>Web Development</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Ryan</td>
+                <td>Java</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>Noah</td>
+                <td>Python</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>Roimen</td>
+                <td>ICDL</td>
+                <td>D</td>
+            </tr>
+        </tbody>
+    </table>  
+</body>
+</html>
