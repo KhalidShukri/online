@@ -1,0 +1,78 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+
+}
+header{
+    background-color: black;
+    margin: 0;
+    color: white;
+}
+#nav-menu{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    text-decoration: none;
+    gap: 10px;
+    text-align: center;
+    justify-content: space-between;
+    margin: 0;
+
+}
+main{
+    background-color: rgb(56, 56, 230);
+    margin-bottom: 0;
+    background-image: url('https://images.pexels.com/photos/2680270/pexels-photo-2680270.jpeg?auto=compress&cs=tinysrgb&w=600');
+    color: white;
+    
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+    border: 1px  ;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: rgb(8, 8, 8);
+}
+a:hover{
+    color: cyan;
+    box-shadow: 1px 2px 2px blue;
+}
+h2{
+    text-align: center;
+    margin-left: 650px;
+    margin-right:650px ;
+    border-radius: 10px;
+    background-color: black;
+    padding: 0;
+    border: 1px solid black;
+    
+   
+    animation: slide 1s ease-in-out;
+}
+@keyframes slide {0%{
+       transform:translateX(0%)
+}
+    50%{
+        transform:translateX(-20%);
+    }
+    100%{
+        transform:translateX(0%)
+    }
+    
+}
+#frameworks{
+    margin-bottom: 0;
+}
+
+footer{
+    color: white;
+    background-color: black;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+}
