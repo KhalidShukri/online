@@ -1,0 +1,13 @@
+body{
+    
+}
+section{
+    background-image:url('https://images.pexels.com/photos/691710/pexels-photo-691710.jpeg?auto=compress&cs=tinysrgb&w=600')
+}
+header{
+    background: linear-gradient(to right,yellow,cyan);
+    padding: 30px;
+}
+footer{
+    background: radial-gradient(blue,violet);
+}
