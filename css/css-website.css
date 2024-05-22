@@ -1,57 +1,57 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
+/* CSS Reset */
+* {
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box;
+}
 
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(0, 96, 128);
 }
-header{
-    background-color: black;
-    margin: 0;
-    color: white;
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 16px;
+    
 }
-#nav-menu{
+
+#nav-menu {
+    list-style: none;
     display: flex;
-    flex-direction: row;
-    padding: 20px;
-    text-decoration: none;
-    gap: 10px;
-    text-align: center;
     justify-content: space-between;
-    margin: 0;
-
-}
-main{
-    background-color: rgb(56, 56, 230);
-    margin-bottom: 0;
-    background-image: url('https://images.pexels.com/photos/2680270/pexels-photo-2680270.jpeg?auto=compress&cs=tinysrgb&w=600');
-    color: white;
     
 }
 
+#nav-menu li {
+    padding: 8px;
+}
 
-a{
+#nav-menu a {
+    background: linear-gradient(to right,rgb(51, 233, 105),orange);
     text-decoration: none;
-    color: white;
-    border: 1px  ;
-    padding: 2px;
-    border-radius: 5px;
-    background-color: rgb(8, 8, 8);
+    color: black;
+    padding: 3px;
+    border-radius: 7px;
 }
-a:hover{
-    color: cyan;
-    box-shadow: 1px 2px 2px blue;
+#nav-menu a:hover{
+    background: linear-gradient(to right,white,white);
+    transition: 1s ease-out;
+
 }
-h2{
-    text-align: center;
-    margin-left: 650px;
-    margin-right:650px ;
-    border-radius: 10px;
-    background-color: black;
-    padding: 0;
-    border: 1px solid black;
-    
-   
+
+
+/* Main Sections */
+main {
+    padding: 32px;
+}
+
+h2 {
+    margin-bottom: 16px;
     animation: slide 1s ease-in-out;
 }
 @keyframes slide {0%{
@@ -65,10 +65,34 @@ h2{
     }
     
 }
-#frameworks{
-    margin-bottom: 0;
+
+
+p {
+    margin-bottom: 24px;
 }
 
+pre {
+    background-color: #be1919;
+    padding: 16px;
+    margin-bottom: 24px;
+}
+
+code {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+ul {
+    margin-bottom: 24px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+/* footer */
 footer{
     color: white;
     background-color: black;
@@ -76,3 +100,7 @@ footer{
     margin: 0;
     text-align: center;
 }
+
+   
+  
+
