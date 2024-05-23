@@ -3,33 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness Tracker</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Fitness Tracker App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
-    <!-- <div>
-        <i class="fas fa-heartbeat"></i>
-    </div> -->
-    <!-- header -->
+    <!-- Header -->
     <header>
         <nav>
-            <div class="logo"></div>
-            <i class="fas fa-heartbeat">Fitness Tracker</i>
-            <div class="menu toggle">
-                <!-- <i class="fas fa-bars"></i> -->
+            <div class="logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>Fitness Tracker</span>
             </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
             <ul>
-                <li><a href="#" id="home">Home</a></li>
-                <li><a href="#" id="features">Features</a></li>
-                <li><a href="#" id="pricing">Pricing</a></li>
-                <li><a href="#" id="contacts">Contacts</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <!-- main section -->
+
+    <!-- Main Area -->
     <main>
-        <!-- hero section -->
         <section class="hero">
             <div class="hero-content">
                 <h1>Track Your Fitness Journey</h1>
@@ -38,145 +40,144 @@
             </div>
         </section>
 
-        <!-- progress section -->
-
+        <!-- Progress Section -->
         <section class="progress">
             <h2>Your Progress</h2>
             <div class="progress-card">
                 <i class="fas fa-walking"></i>
                 <h3>Steps</h3>
-                <p>8500/10000</p>
+                <p>8,500 / 10,000</p>
                 <div class="progress-bar">
-                    <div class="progress-value" style="width: 85%;"></div>
+                    <div class="progress-value" style="width: 84%;"></div>
                 </div>
             </div>
             <div class="progress-card">
                 <i class="fas fa-burn"></i>
                 <h3>Calories</h3>
-                <p>650/1000</p>
+                <p>8,500 / 10,000</p>
                 <div class="progress-bar">
-                    <div class="progress-value" style="width: 65%;"></div>
+                    <div class="progress-value" style="width: 67%;"></div>
                 </div>
             </div>
         </section>
 
-        <!-- meals section -->
+        <!-- Meals Section -->
         <section class="meals">
             <h2>Meals</h2>
             <div class="meal-card">
-                <img src="meal1.jpg" alt="meal 1">
+                <img src="images/meal1.jpg" alt="Meal 1">
                 <h3>Grilled Chicken Salad</h3>
-                <p>Calories:350</p>
+                <p>Calories 350</p>
             </div>
             <div class="meal-card">
-                <img src="meal2.jpg" alt="meal 2">
-                <h3>Quinoa</h3>
-                <p>Calories:450</p>
+                <img src="images/meal2.jpg" alt="Meal 3">
+                <h3>Quinoa Bowl</h3>
+                <p>Calories 550</p>
             </div>
-            <form>
-                <h3>Add a meal</h3>
-                <input type="text" placeholder="Meal" required>
+
+            <form action="">
+                <h3>Add Meal</h3>
+                <input type="text" placeholder="Name" required>
                 <input type="number" placeholder="Calories" required>
                 <button type="submit">Add</button>
             </form>
         </section>
-        <!-- Activities section -->
+
+        <!-- Activities Section -->
         <section class="activities">
-        <h2>Activities</h2>
-        <div class="activity-card">
-            <i class="fas fa-running"></i>
-            <h3>Running</h3>
-            <p>Duration:60minutes</p>
-            <p>Calories:550</p>
-        </div>
-        <div class="activity-card">
-            <i class="fas fa-dumbbell"></i>
-            <h3>Weight Training</h3>
-            <p>Duration:30minutes</p>
-            <p>Calories:350</p>
-        </div>
-        <form>
-            <h2>Add an activity</h2>
-            <input type="text" placeholder="activity name" required>
-            <input type="number" placeholder="duration" required>
-            <button type="submit">Add</button>
-        </form>
-    </section>
+            <h2>Activities</h2>
+            <div class="activity-card">
+                <i class="fas fa-running"></i>
+                <h3>Running</h3>
+                <p>Duration: 30 mins </p>
+                <p>Calories Burned: 400</p>
+            </div>
+            <div class="activity-card">
+                <i class="fas fa-dumbbell"></i>
+                <h3>Weight Lifting</h3>
+                <p>Duration: 30 mins </p>
+                <p>Calories Burned: 500</p>
+            </div>
 
-    <!-- Features section -->
-    <section class="feature" id="features">
-        <h2>Features</h2>
-        <div class="feature-card">
-            <i class="fas fa-running"></i>
-            <h3>Activity tracking</h3>
-            <p>Track your daily steps,distances and calories burnt</p>
-        </div>
-        <div class="feature-card">
-            <i class="fas fa-utensils"></i>
-            <h3>meal tracking</h3>
-            <p>log your meals and your daily calories intake</p>
-        </div>
+            <form action="">
+                <h2>Add an Activity</h2>
+                <input type="text" placeholder="Activity Name" required>
+                <input type="number" placeholder="Duration(mins)" required>
+                <button type="submit">Add</button>
+            </form>
+        </section>
 
-        <div class="feature-card">
-            <i class="fas fa-chart-line"></i>
-            <h3>Progress tracking</h3>
-            <p>Monitor your progress with detailed charts and graphs</p>
+        <!-- Features Section -->
+        <section class="features" id="#features">
+            <h2>Features</h2>
+            <div class="feature-card">
+                <i class="fas fa-running"></i>
+                <h3>Activity Tracking</h3>
+                <p>Track your daily steps, distance and calories burned</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-utensils"></i>
+                <h3>Meal Tracking</h3>
+                <p>Log your meals and track your daily calorie intake</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Progress Tracking</h3>
+                <p>Monitor your progress with detailed charts and graghs</p>
+            </div>
             <div class="feature-card">
                 <i class="fas fa-trophy"></i>
                 <h3>Goal Setting</h3>
                 <p>Set personalized goals and stay motivated</p>
             </div>
-    
-        </div>
+        </section>
 
+        <!-- Prizing section -->
+        <section class="pricing" id="pricing">
+            <h2>Pricing Plans</h2>
+            <div class="pricing-card">
+                <h3>Basic</h3>
+                <p class="price">$9.99</p>
+                <ul>
+                    <li>Activity Tracking</li>
+                    <li>Meal Tracking</li>
+                    <li>Progress Tracking</li>
+                </ul>
+                <a href="#" class="btn">Sign Up</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Premium</h3>
+                <p class="price">$19.99</p>
+                <ul>
+                    <li>Activity Tracking</li>
+                    <li>Meal Tracking</li>
+                    <li>Progress Tracking</li>
+                    <li>Goal Setting</li>
+                    <li>Personalized Plans</li>
+                </ul>
+                <a href="#" class="btn">Sign Up</a>
+            </div>
+        </section>
 
-    </section>
-    <!-- Pricing section -->
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <form action="">
+                <input type="text" placeholder="name" required>
+                <input type="email" placeholder="email" required>
+                <textarea placeholder="Message" id="" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
 
-    <section class="pricing" id="pricing">
-        <h2>Pricing Plan</h2>
-        <div class="pricing-card">
-            <h3>Basic Plan</h3>
-            <p class="price">$9.99</p>
-            <ul>
-                <li>Activity Tracking</li>
-                <li>Meal Tracking</li>
-                <li>Progress Tracking</li>
-            </ul>
-            <a href="#" class="btn">Sign up</a>
-        </div>
-        <div class="pricing-card">
-            <h3>Premium Plan</h3>
-            <p class="price">$19.99</p>
-            <ul>
-                <li>Activity Tracking</li>
-                <li>Meal Tracking</li>
-                <li>Progress Tracking</li>
-                <li>Goal Setting</li>
-                <li>Personalized Plans</li>
-            </ul>
-            <a href="#" class="btn">Sign up</a>
-        </div>
-    </section>
-
-    <!-- Contact Sectiom -->
-    <section class="contact" id="contact">
-        <h2>Contact us</h2>
-        <form>
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <!-- ?footer section -->
+    <!-- Footer Section -->
     <footer>
-        <p>&copy;2024,Fitness Traxker App All Rights Reserved</p>
+        <p>&copy; 2024 Fitness Tracker App. All rights reserved</p>
     </footer>
 
-    <script src="js/script.js"></script>
-
-    </main>
+    <!-- JavaScript Section -->
+    <script src="js/scripts.js"></script>
+    
 </body>
 </html>
