@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    background: linear-gradient(to bottom, cyan, purple,pink);
+}
+
+header{
+    justify-content: space-between;
+    text-align: center;
+      
+}
+h1{
+    color: white;
+
+}
+ul .active{
+    color: orangered;
+    position: relative;
+}
+ul .active::before{
+    content: "";
+    height: 4px;
+    width: 200%;
+    background: linear-gradient(to right,cyan,purple,pink);
+    position: absolute;
+    bottom: -32px;
+    left: -50%;
+    z-index: 2;
+    border-radius: 10px;
+}
+.line{
+    height: 3px;
+    width: 100%;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 98px;
+}
+
+nav ul{
+    display: flex;
+    text-align: center;
+    background-color: #05021C;
+    padding: 10px;
+    border-radius: 1rem;
+    justify-content: space-around;
+    margin: 5px 100px;
+
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    color: orange;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 1rem;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover{
+    color: orangered;
+}
+main{ 
+    align-items: center;
+    max-width: 1200px;
+    margin-left: 150px;
+    margin-top: 80px;
+    height:600px;
+    background-color: transparent;
+}
+h2{
+    text-align: center;
+    color: purple;
+    margin-top: 60px;
+    padding-top: 20px;
+}
+main p{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    scale: 1.5;
+}
+main .dev{
+    line-height: 2;
+    text-transform: uppercase;
+    color: white;
+}
+
+main .dev .name{
+    color: orangered;
+
+}
+
+footer{
+    background-color: black;
+    height: 200px;
+    color: white;
+}
+footer .footer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+footer .footer p{
+    margin: 4rem auto;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.content p:first-of-type{
+    color:black;
+}
+
+.hire{
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 20px 550px 20px 550px;
+    border-radius: 1rem;
+    background-color: black;
+    color: pink;
+    transition: 0.4s ease;
+}
+
+.hire:hover{
+    color: white;
+    background-color: transparent;
+
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
