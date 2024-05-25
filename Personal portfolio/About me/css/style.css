@@ -99,6 +99,9 @@ main p{
     color: white;
     text-align: justify;
 }
+hr{
+    margin: 0 20px;
+}
 footer{
     background-color: black;
     height: 200px;
