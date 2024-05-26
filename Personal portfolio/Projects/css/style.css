@@ -231,4 +231,30 @@ footer{
     transform: translate(-50%,-50%);
     text-align: center;
 }
+@media screen and (max-width:1200px){
+    .container-one .e-commerce,.container-one .travel,.container-one .blog{
+        height: 100%;
+    }
+}
+@media screen and (max-width:768px){
+    nav ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+    h2{
+        margin-bottom: 4px;
+        margin-top: 0;
+    }
+    main .projects{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    footer{
+        position: absolute;
+        bottom: 0;
+    }
+    .container-one .e-commerce,.container-one .travel,.container-one .blog{
+        height: 100%;
+    }
+}
 
