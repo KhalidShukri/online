@@ -3,8 +3,137 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    background: #141a1e;
+}
 header{
+    /* display: flex;
+    justify-content: space-between; */
+    /* background-image: url('https://images.pexels.com/photos/262508/pexels-photo-262508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    backgroun */
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+h1{
+    text-align: left;
+    color: rgb(0, 94, 255);
+}
+nav ul{
+    display: flex;
+   justify-content: center;
+    list-style: none;
+    gap: 70px;
+}
+nav ul li{
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.456);
+    animation: 1s ease-in;
+}
+nav ul li a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+/* .container{
+    width: 1200px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: left;
+    position: relative;
+    height: 100%;
+} */
+
+main{
+    background-color: white;
+    width: 1200px;
+    margin: 2rem auto;
+    height: 650px;
+    background-image: url('https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    position: absolute;
+    left: 25%;
+    gap: 20px;
+}
+
+.container h2,.container p,.container input{
+    margin:30px auto ;
+    
+}
+.container h2{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(4, 71, 188);
+}
+.search{
+    position: relative;
+    width: 800px;
+
+}
+input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 1rem;
+    
+}
+
+button{
+    position: absolute;
+   left: 45%;
+   padding: 20px;
+   border-radius: 1rem;
+   background-color:rgb(0, 94, 255) ;
+   color: white;
+   font-size: 16px;
+   border: none;
+   font-weight: bold;
+}
+.card{
+    margin-top: 175px;
+    display: flex;
+    justify-content: space-around;
+}
+.card-one{
+    border:none;
+}
+.card-one i{
+    position: absolute;
+    text-align: center;
+    font-size: 32px;
+    padding:0px 10px 10px 50px;
+    top: 80%;
+}
+.card-one p{
+    margin-bottom: 20px;
+}
+
+.card-two{
+    border: none;
+    
+}
+.card-two i{
+    position: absolute;
+    text-align: center;
+    font-size: 32px;
+    padding:0px 10px 10px 50px;
+    top: 80%;
+}
+
+
+
+
+footer{
+    position: absolute;
+    left: 45%;
+    bottom: 0;
 }
