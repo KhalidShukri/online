@@ -47,11 +47,20 @@ header{
     text-align: center;
       
 }
+@keyframes slide{
+    0%{
+        transform: translateX(-150%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
 h1{
-    color: #20025a;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-style: italic;
-   
+color: #462ae6;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-style: italic;
+animation: slide 2.5s ease-in-out;
+
 
 }
 nav ul{
@@ -147,6 +156,22 @@ i{
 }
 footer{
     text-align: center;
+}
+
+@media screen and (max-width:1000px){
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .dev{
+        text-align: left;
+    }
+    .expertise{
+       margin-left: 0;
 }
 
 
