@@ -1,138 +1,154 @@
-*{
+
+
+body, html {
     margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+   
 }
 body{
-    background: linear-gradient(to bottom, cyan, purple,pink);
+    background-color: #462ae6;
+    width: 100%;
+}
+.container {
+    width: 1200px; 
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+    position: relative;
+}
+.container::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    background-image: url('https://img.freepik.com/free-vector/advanced-computer-skills-abstract-concept-illustration_335657-3877.jpg?t=st=1716709975~exp=1716713575~hmac=b87edfe06bc3903c0dacb407dc2a684719ba6312d6b4447974b774c1c9357014&w=740');
+    background-size: cover;
+    background-position: center;
+    scale: 0.58;
+    transition: transform 0.3s ease;
 }
 
+/* .container::after:hover{
+    transform: translateY(-50%);
+
+} */
 header{
+    margin-top: 0;
+    display: flex;
     justify-content: space-between;
     text-align: center;
       
 }
 h1{
-    color: white;
+    color: #20025a;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+   
 
 }
-ul .active{
-    color: orangered;
-    position: relative;
-}
-ul .active::before{
-    content: "";
-    height: 4px;
-    width: 200%;
-    background: linear-gradient(to right,cyan,purple,pink);
-    position: absolute;
-    bottom: -32px;
-    left: -50%;
-    z-index: 2;
-    border-radius: 10px;
-}
-.line{
-    height: 3px;
-    width: 100%;
-    background-color: whitesmoke;
-    position: absolute;
-    top: 98px;
-}
-
 nav ul{
     display: flex;
-    text-align: center;
-    background-color: #05021C;
-    padding: 10px;
-    border-radius: 1rem;
     justify-content: space-around;
-    margin: 5px 100px;
-
-}
-nav ul li{
     list-style: none;
+    
 }
+
 nav ul li a{
-    color: orange;
+    margin-left: 20px;
+    color: rgb(55, 12, 226);
     text-decoration: none;
-    padding: 8px;
-    border-radius: 1rem;
-    transition: color 0.3s ease;
+    transition: 0.3s ease;
 }
 nav ul li a:hover{
-    color: orangered;
+    color: #05021C;
 }
-main{ 
-    align-items: center;
-    max-width: 1200px;
-    margin-left: 150px;
-    margin-top: 80px;
-    height:600px;
-    background-color: transparent;
-}
+
 h2{
-    text-align: center;
-    color: purple;
-    margin-top: 60px;
-    padding-top: 20px;
+    color: rgb(11, 121, 97);
 }
-main p{
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 10px;
-    scale: 1.5;
-}
-main .dev{
+main p{ 
     line-height: 2;
-    text-transform: uppercase;
-    color: white;
+    color: black;
+    text-align: justify;
 }
-
-main .dev .name{
-    color: orangered;
-
+i{
+    font-size: 40px;
+    margin: 10px;
 }
-
-footer{
-    background-color: black;
-    height: 200px;
-    color: white;
+.dev{
+    font-size: 25px;
+    text-align: center;
 }
-footer .footer{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-}
-footer .footer p{
-    margin: 4rem auto;
-}
-.content{
-    display: flex;
-    flex-direction: column;
-}
-
-.content p:first-of-type{
-    color:black;
-}
-
 .hire{
     text-align: center;
     padding: 10px;
     border: 1px solid black;
-    margin: 20px 550px 20px 550px;
+    margin:20px 250px;
     border-radius: 1rem;
-    background-color: black;
-    color: pink;
+    background-color: #d60d0d;
+    color: white;
     transition: 0.4s ease;
+    border: none;
 }
 
 .hire:hover{
-    color: white;
+    color: #05021C;
     background-color: transparent;
+    border: 1px solid #05021C;
 
 }
+
+.content p{
+    color: #d60d0d;
+}
+.name{
+    color: #17033c;
+    text-transform: capitalize;
+}
+.expertise{
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     
+}
+
+.expertise p{
+    margin-left: 70px;
+    text-align: center;
+    border: 1px solid white;
+    color: #462ae6;
+}
+.expertise p:last-of-type{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 1px;
+    margin-bottom: 3px;
+}    
+.expertise p:nth-child(2){
+    font-size: 20px;
+    font-weight: bold;
+    color: #462ae6;
+}
+
+
+.expertise p:first-of-type{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #462ae6;
+}
+footer{
+    text-align: center;
+}
+
 
 
 
