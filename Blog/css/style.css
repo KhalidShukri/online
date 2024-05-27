@@ -141,12 +141,13 @@ button:hover{
 .card-two p{
     color: rgb(8, 4, 248);
 }
-
-
-
-
 footer{
-    position: absolute;
-    left: 45%;
-    bottom: 0;
+    text-align: center;
+    color: rgb(0, 94, 255);
 }
+
+
+
+
+
+   

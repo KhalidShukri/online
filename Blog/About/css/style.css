@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: #141a1e;
+}
+header{
+    /* display: flex;
+    justify-content: space-between; */
+    /* background-image: url('https://images.pexels.com/photos/262508/pexels-photo-262508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    backgroun */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+h1{
+    text-align: left;
+    color: rgb(0, 94, 255);
+}
+nav ul{
+    display: flex;
+   justify-content: center;
+    list-style: none;
+    gap: 70px;
+}
+nav ul li{
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.456);
+    animation: 1s ease-in;
+    font-size: 16px;
+}
+nav ul li a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* .container{
+    width: 1200px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: left;
+    position: relative;
+    height: 100%;
+} */
+
+main{
+    background-color: white;
+    width: 1200px;
+    margin: 2rem auto;
+    height: 650px;
+}
+
+main h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: rgb(0, 94, 255);
+
+}
+
+main p{
+    text-align: center;
+    font-weight: bold;
+    font-size:17px;
+    
+}
+
+.about{
+    border: 0px solid;
+    width: 40%;
+    margin-left: 30px;
+    margin-top: 150px;
+    color: royalblue;
+
+}
+.about p{
+    text-align: justify;
+    line-height: 1.2;
+}
+.popular{
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    width: 40%;
+    height: 500px;
+}
+.popular h3{
+    text-align: center;
+    margin-top: 8px;
+}
+hr{
+    align-items: center;
+    width: 50%;
+    margin-left: 140px;
+    margin-top: 10px;
+    background-color:  rgb(0, 94, 255);
+
+}
+.popular h4{
+    text-align: center;
+    margin-top: 8px;
+}
+img{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    left: 30%;
+    margin-top: 10px;
+    border: 5px solid black;
+    border-radius: 1rem;
+}
+.popular h5{
+    position: absolute;
+    left: 32%;
+    bottom: 38%;
+    color: rgb(0, 94, 255);
+    font-size: 16px;
+    font-weight: bold;
+}
+.popular p{
+    position: absolute;
+    text-align: justify;
+    bottom: 15%;
+    color: royalblue;
+}
+
+
+
+footer{
+    text-align: center;
+    color: rgb(0, 94, 255);
+}
