@@ -97,11 +97,19 @@ button{
    font-size: 16px;
    border: none;
    font-weight: bold;
+   animation: 0.3s ease;
+}
+
+button:hover{
+    background: transparent;
+    color: rgb(0, 94, 255);
+
+    
 }
 .card{
     margin-top: 175px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .card-one{
     border:none;
@@ -115,6 +123,7 @@ button{
 }
 .card-one p{
     margin-bottom: 20px;
+    color: rgb(8, 4, 248);
 }
 
 .card-two{
@@ -127,6 +136,10 @@ button{
     font-size: 32px;
     padding:0px 10px 10px 50px;
     top: 80%;
+}
+
+.card-two p{
+    color: rgb(8, 4, 248);
 }
 
 
