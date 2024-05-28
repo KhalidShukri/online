@@ -92,21 +92,21 @@ img{
 }
 .ibiza{
     position: absolute;
-    left: 20%;
-    bottom: 40%;
+    left: 22%;
+    bottom: 53%;
     color: royalblue;
 }
 .mont{
     position: absolute;
-    bottom: 40%;
+    bottom: 53%;
     left: 45%;
     color: royalblue;
 }
 
 .tapas{
     position: absolute;
-    bottom: 40%;
-    left: 72%;
+    bottom: 53%;
+    left: 69%;
     color: royalblue;
 }
 
@@ -115,8 +115,8 @@ img{
     position: absolute;
     width: 300px;
     height:150px;
-    bottom: 18%;
-    left:16%;
+    bottom: 35%;
+    left:22%;
     text-align: left;
 
 }
@@ -125,8 +125,8 @@ img{
     position: absolute;
     width: 300px;
     height: 150px;
-    bottom: 18%;
-    left: 43%;
+    bottom: 35%;
+    left: 45%;
     text-align: left;
 
 }
@@ -134,7 +134,7 @@ img{
     position: absolute;
     width: 300px;
     height:150px;
-    bottom: 18%;
+    bottom: 35%;
     left: 69%;
     text-align: left;
 
