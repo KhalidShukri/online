@@ -369,7 +369,7 @@ console.log(dispalyusername("Khalid"))
 
 // function that takes a yeat as argument and returns true if the year is leap year and false if otherwise. a leap year is divisible by 4
 function year(_leap) {
-    if ((_leap % 4 === 0 && year !== 0) || _leap % 400 === 0) {
+    if ((_leap % 4 === 0 && _leap !== 0) || _leap % 400 === 0) {
         return true
 
     } else {
