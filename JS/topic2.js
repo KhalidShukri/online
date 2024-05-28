@@ -173,6 +173,149 @@ console.log(!(x === y));
 // for loop:executes a block of code a specific number of times based on a counter variable
 // while loop:executes a block of code as long as a specified condition is true
 // do...while:similar to while loop but the code block is executed atleast once before checking the condition
+// / ?Examples
+
+for (let i = 1; i <= 10; i++) {
+    console.log(i)
+}
+
+for (let k = 10; k >= 1; k--){
+    console.log(k)
+}
+let k = 1;
+while (k <= 10) {
+    console.log(k)
+    k++
+}
+
+let p = -30;
+while (p <= 30){
+    console.log(p)
+    p = p + 15
+}
+let c = 1;
+do {
+    console.log(c)
+    c++
+} while (c <= 10)
+
+
+    // break
+    for (a = 1;a <= 10; a++) {
+        if (a === 6) {
+            break
+        } else
+        console.log(a)
+    }
+
+    // 5*1
+
+    let num1 = 5
+for (let b = 1;b <= 12; b++) {
+    console.log(num1 + " x " + b +" = " + (num1 * b))
+}
+
+
+
+
+
+
+// single if statemet
+let userAge = 18;
+
+if (userAge >= 18);{
+    console.log("You are an adult")
+}
+
+// if..else statement
+
+let MyNum = 100;
+if (MyNum >= 20){
+    console.log(MyNum + " is greater than 20")
+}else{
+    console.log(MyNum + " is less than 20")
+}
+
+// if.. else... if... else
+
+let myothernum = 5;
+
+if (myothernum > 5) {
+    console.log("5 is graeter than 5")
+
+} else if (myothernum < 5) {
+    console.log("5 is less than 5")
+
+} else if (myothernum == 5) {
+    console.log("5 is equal to 5")
+
+} else {
+
+}
+
+// switch
+let Favcolor = 'Green'
+
+switch (Favcolor) {
+    case 'nlue':
+        console.log("Your favourite color is blue");
+        break;
+        case 'Red':
+            console.log("Your favourite color is red");
+            break;
+        case 'Green':
+            console.log("Your favourite color is Green");
+            break;
+        default:
+            console.log("We dont know your favourite color");
+}
+
+// write a JavScript program that converts temperatures to celcius.  if temperature is below zero 0, prints freezing if between 0 and 30 print cold if between 30 and 60 print warm if its above 60 print hot
+
+let temp = 0;
+let Newtemp = (temp- 32) * 5 / 9;
+if (Newtemp < 0) {
+    console.log('Freezing')
+} else if(Newtemp < 30) {
+    console.log('Cold')
+} else if (Newtemp < 60) {
+    console.log('Warm')
+} else {
+    console.log('Hot')
+}
+
+// program that prints he day of the week using switch statement  switch variable should be integer 1-7
+let day = 5;
+switch (day){
+    case 1:
+        console.log("Sunday")
+        break;
+    case 2:
+        console.log("Monady")
+        break;
+    case 3:
+        console.log("Tuesday")
+        break;
+    case 4:
+        console.log("Wednesday")
+        break;
+    case 5:
+        console.log("Thursday")
+        break;
+    case 6:
+        console.log("Friday")
+        break;
+    case 7:
+        console.log("Saturday")
+        break;
+    default:
+        console.log("Insert a number between 1 and 7")
+
+}
+
+
+
+
 
 
 // 3.Break and repeat statements
@@ -182,11 +325,64 @@ console.log(!(x === y));
 
 // The control flow statements allow you to craete complex logics and algorithms in your JavaScript codes
 
-// ?Examples
 
 
 
 // 2.4 functions
+// they are reusable blocks of code that perform a specific task.
+
+// Function declaration
+// function functionName(psrsm1, param2,...){
+//     // Function Body
+//     return value
+// }
+
+function greetings() {
+    console.log('Hello Everyone');
+}
+
+greetings()
+
+function addnumber() {
+    let n1 = 3
+    let n2 = 7
+    let sum = n1 + n2
+    console.log("The sum is:  " + sum)
+}
+
+addnumber()
+
+function addtwonumbers(x,y) {
+    let sum = x + y
+    console.log("the sum is: " + sum)
+
+}
+
+addtwonumbers(910,20)
+
+function dispalyusername(username){
+    return username
+}
+
+console.log(dispalyusername("Khalid"))
+
+
+// function that takes a yeat as argument and returns true if the year is leap year and false if otherwise. a leap year is divisible by 4
+function year(_leap) {
+    if ((_leap % 4 === 0 && year !== 0) || _leap % 400 === 0) {
+        return true
+
+    } else {
+        return false
+    }
+
+}
+
+console.log(year(2024)) 
+year(2014)
+year(2019)
+year(2094)
+    
 
 
 

@@ -114,6 +114,7 @@ img{
     height: 200px;
     width: 200px;
     left: 30%;
+    bottom: 48%;
     margin-top: 10px;
     border: 5px solid black;
     border-radius: 1rem;
@@ -121,15 +122,17 @@ img{
 .popular h5{
     position: absolute;
     left: 32%;
-    bottom: 38%;
+    bottom: 40%;
     color: rgb(0, 94, 255);
     font-size: 16px;
     font-weight: bold;
 }
 .popular p{
     position: absolute;
-    text-align: justify;
-    bottom: 15%;
+    text-align: left;
+    
+    bottom: 19%;
+    left:0% ;
     color: royalblue;
 }
 
