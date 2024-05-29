@@ -379,9 +379,153 @@ function year(_leap) {
 }
 
 console.log(year(2024)) 
-year(2014)
-year(2019)
-year(2094)
+console.log(year(2014))
+console.log(year(2019))
+console.log(year(2094))
+
+// Arrays
+
+// Arrays in javascript are used to store ordered collection of values.
+// Arrays can contain values of different of different data types including objects and other arrays(Multioi-dimensional arrays)
+// 1.Creating and assigning arrays
+// const arr = [value1,value2,valueN]
+
+// const emparr = [];
+
+const fruits = ['apple','banana','orange']
+
+const numbers = [1,2,3,4,5]
+
+const mixed = ['hello',43,true,null]
+
+
+
+// 2.Array Methods
+// push() and pop(-ADD AND REMOVE FROM THE END OF THE ARRAY)
+
+
+// sHIFT() AND UNSHIFT()-ADDING AND REMOVING AT THE BEGINNING OF AN ARRAY
+
+
+
+// slice()-Returns a shallow copyof a portion of an array
+
+
+// splice()-changes the contents of an array by removing or replacing existing elements and or adding elements
+
+// concat()-merges two or more arrays together and returns a new array
+
+
+// indexOf() and lastIndexOf-Returns the index of the first or last occurrence of a specified elemnt in the array
+
+// includes( determines whether an array includes a certain value)
+// reverse-recerses the order of array elemnts
+
+// sort-sorts the array elemnts in place
+
+// map() filter() and reduce()-high order functions for transorming and manipulating arrays
+// push
+fruits.push('grape')
+console.log(fruits)
+// pop
+fruits.pop()
+console.log(fruits)
+// unshift
+fruits.unshift('kiwi')
+console.log(fruits)
+// shift
+fruits.shift()
+console.log(fruits)
+
+// slice
+let slicedarray = fruits.slice(1, 3)
+console.log(slicedarray)
+
+// splice
+fruits.splice(1,1,'pears')
+console.log(fruits)
+
+// concat
+let newarray = ['mango','pineapple']
+var combinedarray = fruits.concat(newarray)
+console.log(combinedarray)
+
+// 3.Array iteration
+// Foreach()- executes a provided function once for each array element.
+// map() creates a new array with the rseults of calling a provided function on every elemnt of the original array
+// filter() creates a new array with all ements that pass the tests implemented function
+// Reduce() -applies a function against an accumulator and each element of the array to reduce it to a single value
+
+// /foreach
+
+fruits.forEach(fruits => [
+    console.log(fruits)
+])
+
+const doublenumber = numbers.map(num => num * 2)
+console.log(doublenumber)
+
+const evennumbers = numbers.filter(num => num % 2 ===0)
+console.log(evennumbers)
+
+// reduce()
+
+const sum = numbers.reduce((acc, num)=> acc + num, 0)
+console.log(sum)
+
+// objects
+// objects in javascript are unordered collection of key value parts
+// they are used to store complex data structures and real world entities
+
+// 1.object literal
+// const obj = {
+//     key1:value1,
+//     key2: value2,
+//     keyend:valueend,
+// }
+
+const person1 = {
+    name: 'Khalid',
+    age: 18,
+    greet: function() {
+        console.log(`hello, my name is ${this.name}`)
+    }
+    
+}
+
+
+// // access and modify object properties
+
+// // dot notation
+// obj.key1
+// // bracket notation
+// obj['key2']
+console.log(person1.name)
+person1.age = 50;
+console.log(person1)
+person1.occupation = 'software developer'
+console.log(person1)
+// // adding a new property
+// obj.newkey = newvalue;
+
+
+// // delete a property
+// delete obj.key2;
+
+// object methodsc
+// const obj = {
+//     method1: function() {
+//             // method body
+//     },
+//     method2() {
+//             // method body(shorthand sysntax)
+//     }
+// }
+person1.greet()
+// 4.the 'this' keyword
+// /the this keyword refers to the current object context.its value depends on how the function is caled
+
+
     
 
 
