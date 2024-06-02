@@ -59,7 +59,7 @@ function calculate() {
 
     switch(operator){
         case "+":
-        computation = prev + currentvalue;
+        computation = prev + current;
              break;
              case "-":
                 computation = prev - current;

@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-section{
+    background-color: grey;
+}
+h1{
+    text-align: center;
+    margin: 30px 0;
+}

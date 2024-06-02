@@ -19,10 +19,10 @@ function addtask() {
     if (tasktext !== "") {
         const taskitem = createTaskItem(tasktext)
         tasklist.appendChild(taskitem)
-        taskinput.valye =""
+        taskinput.value =""
 
     } else {
-        alert("Please enter a atsk")
+        alert("Please enter a task")
     }
 }
 
