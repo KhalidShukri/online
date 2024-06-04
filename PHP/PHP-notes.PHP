@@ -27,4 +27,18 @@ echo "Hello,Everyone";
 
 // Variable naming follows camelCase convention
 
+// forms and data handling
+// handling form data with $_GET and $_POAT superglobals
+// 
+// form validation and sanitization with filter_input() and filter_var()
+// preventing code injection with prepared statements or input santization
+
+// Form methods
+
+// GET -> Appends form data in the URL in name/value pairs.Useful when the data doesn't need to be secure(e.g.search forms)
+// POST ->Sends data inside the body of the HTTP request.More secure for sensitive data(e.g.Passwords)
+
+// Handling $_GET data
+// When a form is submitted using the GET method,form data is appended to the URL as a query string and can be accessed using $_GET superglobal
+
 ?>
