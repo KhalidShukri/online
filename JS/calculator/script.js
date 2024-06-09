@@ -76,11 +76,13 @@ function calculate() {
     }
 
     result = computation.toString();
+    history.innertext = `${previousvalue} ${operator} ${currentvalue} = ${result}`
     previousvalue = ""
     currentvalue = result
     operator = ""
     
 }
+
 
 function clear() {
     previousvalue = ""
